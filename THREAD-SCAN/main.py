@@ -4,8 +4,6 @@ import queue
 
 # Store the ports that must be scanned
 queue_ports = queue.Queue()
-# Protect output so threads do not print simultaneously
-print_lock = threading.Lock()
 
 def portscan(port):
     target= "127.0.0.1"
